@@ -59,12 +59,12 @@ export function Terminal({ onClose }: TerminalProps) {
       "[OK] Started System Logging Service",
       "[OK] Reached target Basic System",
       "[OK] Started Portfolio Service Manager",
-      "Portfolio OS 1.0.0 LTS muhammad-terminal",
+      "Portfolio OS 1.0.0 LTS terminal",
       "",
       "Welcome to Portfolio OS!",
       "Type 'help' for available commands.",
       "",
-      "muhammad@portfolio:~$ neofetch",
+      "AbdullahChaudhary@portfolio:~$ neofetch",
     ]
 
     let delay = 0
@@ -136,7 +136,7 @@ export function Terminal({ onClose }: TerminalProps) {
       ...prev,
       {
         id: Date.now(),
-        content: `muhammad@portfolio:~$ ${command}`,
+        content: `AbdullahChaudhary@portfolio:~$ ${command}`,
         type: "input",
       },
     ])
