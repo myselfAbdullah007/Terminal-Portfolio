@@ -54,7 +54,7 @@ export function Intro() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl font-bold mb-6 text-primary"
             >
-              Muhammad Abdullah Chaudhary
+              Muhammad Abdullah
             </motion.h1>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
