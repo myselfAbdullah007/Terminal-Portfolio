@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 3%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 4%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 4%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 144 100% 89%;
+  --secondary: 240 4% 16%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 63%;
+  --accent: 12 6% 15%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --ring: 142 71% 45%;
+  --terminal-header: 142 30% 10%;
+}
+
+.theme-green {
+  --background: 0 0% 3%;
+  --foreground: 142 71% 90%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 144 100% 89%;
+  --terminal-header: 142 30% 10%;
+  --border: 142 71% 25%;
+}
+
+.theme-amber {
+  --background: 0 0% 3%;
+  --foreground: 36 100% 75%;
+  --primary: 36 100% 50%;
+  --primary-foreground: 36 100% 80%;
+  --terminal-header: 36 30% 10%;
+  --border: 36 100% 25%;
+}
+
+.theme-blue {
+  --background: 0 0% 3%;
+  --foreground: 217 91% 85%;
+  --primary: 217 91% 60%;
+  --primary-foreground: 213 94% 85%;
+  --terminal-header: 217 30% 10%;
+  --border: 217 91% 25%;
+}
+
+.theme-pink {
+  --background: 0 0% 3%;
+  --foreground: 330 81% 85%;
+  --primary: 330 81% 60%;
+  --primary-foreground: 330 100% 90%;
+  --terminal-header: 330 30% 10%;
+  --border: 330 81% 25%;
+}
+
+.theme-matrix {
+  --background: 0 0% 0%;
+  --foreground: 120 100% 50%;
+  --card: 0 0% 4%;
+  --card-foreground: 120 100% 50%;
+  --popover: 0 0% 4%;
+  --popover-foreground: 120 100% 50%;
+  --primary: 120 100% 50%;
+  --primary-foreground: 120 100% 90%;
+  --secondary: 120 100% 25%;
+  --secondary-foreground: 120 100% 50%;
+  --muted: 120 100% 15%;
+  --muted-foreground: 120 100% 40%;
+  --accent: 120 100% 20%;
+  --accent-foreground: 120 100% 50%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 120 100% 50%;
+  --border: 120 100% 20%;
+  --input: 120 100% 20%;
+  --ring: 120 100% 50%;
+  --terminal-header: 120 30% 10%;
+}
+
+.theme-cyberpunk {
+  --background: 224 71% 4%;
+  --foreground: 326 100% 74%;
+  --card: 224 71% 4%;
+  --card-foreground: 326 100% 74%;
+  --popover: 224 71% 4%;
+  --popover-foreground: 326 100% 74%;
+  --primary: 326 100% 74%;
+  --primary-foreground: 330 100% 90%;
+  --secondary: 263 70% 50%;
+  --secondary-foreground: 326 100% 74%;
+  --muted: 263 70% 30%;
+  --muted-foreground: 326 100% 60%;
+  --accent: 263 70% 50%;
+  --accent-foreground: 326 100% 74%;
+  --destructive: 0 100% 30%;
+  --destructive-foreground: 326 100% 74%;
+  --border: 326 100% 40%;
+  --input: 263 70% 50%;
+  --ring: 326 100% 74%;
+  --terminal-header: 224 71% 10%;
+}
+
+.theme-light {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 355.7 100% 97.3%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 142 71% 45%;
+  --terminal-header: 0 0% 95%;
+}
+
+.theme-dark {
+  --background: 20 14.3% 4.1%;
+  --foreground: 0 0% 95%;
+  --card: 24 9.8% 10%;
+  --card-foreground: 0 0% 95%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 95%;
+  --primary: 142 71% 45%;
+  --primary-foreground: 144 100% 89%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 12 6.5% 15.1%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 142 71% 45%;
+  --terminal-header: 240 3.7% 15.9%;
+}
+
+.retro-scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 100% 4px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.97;
+  }
+  5% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.97;
+  }
+  15% {
+    opacity: 0.94;
+  }
+  20% {
+    opacity: 0.98;
+  }
+  25% {
+    opacity: 0.95;
+  }
+  30% {
+    opacity: 0.97;
+  }
+  35% {
+    opacity: 0.96;
+  }
+  40% {
+    opacity: 0.94;
+  }
+  45% {
+    opacity: 0.97;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  55% {
+    opacity: 0.96;
+  }
+  60% {
+    opacity: 0.95;
+  }
+  65% {
+    opacity: 0.98;
+  }
+  70% {
+    opacity: 0.93;
+  }
+  75% {
+    opacity: 0.97;
+  }
+  80% {
+    opacity: 0.94;
+  }
+  85% {
+    opacity: 0.98;
+  }
+  90% {
+    opacity: 0.96;
+  }
+  95% {
+    opacity: 0.93;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+
+body {
+  animation: flicker 5s infinite;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.background-animation {
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.terminal-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bg-terminal-header {
+  background-color: hsl(var(--terminal-header));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Fix for command output indentation */
+.command-output {
+  font-family: monospace;
+  white-space: pre;
+  tab-size: 4;
+}
+
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+/* Add these new styles */
+.intro-gradient {
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--primary) / 0.2) 100%);
+}
+
+.terminal-appear {
+  animation: terminal-appear 0.5s ease-out forwards;
+}
+
+@keyframes terminal-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Update cursor styles */
+.terminal-cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.2em;
+  background-color: currentColor;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
